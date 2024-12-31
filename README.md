@@ -1,5 +1,25 @@
-While HTML and CSS control the content and styling of a page, JavaScript is used to make it interactive. In the JavaScript Algorithm and Data Structures Certification, you'll learn the fundamentals of JavaScript including variables, arrays, objects, loops, and functions.
+# **Slay the JavaScript Dragon**
 
-Once you have the fundamentals down, you'll apply that knowledge by creating algorithms to manipulate strings, factorialize numbers, and even calculate the orbit of the International Space Station.
+**A simple text-based role-playing game created using HTML, CSS, and JavaScript.**
 
-Along the way, you'll also learn two important programming styles or paradigms: Object Oriented Programming (OOP) and Functional Programming (FP).
+## **Description**
+
+[Provide a brief description of your game here. What is the goal of the game? What makes it unique?]
+
+## **How to Play**
+
+1. **Click here to play:** [Insert your CodePen link here]
+2. [Provide any specific instructions on how to start playing the game]
+
+## **Technologies Used**
+* HTML5
+* CSS3
+* JavaScript
+
+**Feel free to customize this template to fit your specific project.**
+
+### **Additional Tips:**
+
+* **Screenshots:** If you have screenshots of your game, include them to make it more visually appealing.
+* **Features:** List the key features of your game.
+* **Future Plans:** Implement a back-end framework like Express.js
