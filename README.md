@@ -16,9 +16,9 @@ Gather Gold: Defeat enemies to earn gold.
 
 **Technologies Used:** HTML5, CSS3, JavaScript
 
-* ## **Documentation**
-https://github.com/traenDithas/Legacy-JavaScript-Algorithms-and-Data-Structures/commit/f01c9b5d325bd2d9544f2e2a416a94787fd8f105
-https://github.com/traenDithas/Legacy-JavaScript-Algorithms-and-Data-Structures/commits/d7b8e85b2edd8bb979b903152a274928ac7faff5/
+## **Documentation**
+* https://github.com/traenDithas/Legacy-JavaScript-Algorithms-and-Data-Structures/commit/f01c9b5d325bd2d9544f2e2a416a94787fd8f105
+* https://github.com/traenDithas/Legacy-JavaScript-Algorithms-and-Data-Structures/commits/d7b8e85b2edd8bb979b903152a274928ac7faff5/
 
 * **Screenshots**
 ![image](https://github.com/user-attachments/assets/99adf39b-adef-4284-b8ea-7139c5cefedf)
