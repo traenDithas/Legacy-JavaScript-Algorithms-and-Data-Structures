@@ -11,8 +11,8 @@ Gather Gold: Defeat enemies to earn gold.
 
 ## **How to Play**
 
-1. **Click here to play:** [[Insert your CodePen link here](https://codepen.io/traenDithas/pen/zxOEmBQ)]
-2. [Click on various options presented on the screen to navigate the game.]
+1. **Click here to play:** (https://codepen.io/traenDithas/pen/zxOEmBQ)
+2. Click on various options presented on the screen to navigate the game.
 
 **Technologies Used:** HTML5, CSS3, JavaScript
 
@@ -21,11 +21,8 @@ https://github.com/traenDithas/Legacy-JavaScript-Algorithms-and-Data-Structures/
 https://github.com/traenDithas/Legacy-JavaScript-Algorithms-and-Data-Structures/commits/d7b8e85b2edd8bb979b903152a274928ac7faff5/
 
 * **Screenshots**
-* ![monsterFight](https://github.com/user-attachments/assets/fc0f1750-f4bf-4058-ace6-9deb6c1059d3)
-* ![easterEgg](https://github.com/user-attachments/assets/559480f3-728b-450e-9160-d05498312f7b)
-* ![defeatDragon](https://github.com/user-attachments/assets/36e131c4-6032-4216-bafe-fa56939bc3c8)
-
-
-
+![image](https://github.com/user-attachments/assets/99adf39b-adef-4284-b8ea-7139c5cefedf)
+![image](https://github.com/user-attachments/assets/45da50ff-d488-45c8-9085-4dc9bb228e49)
+![image](https://github.com/user-attachments/assets/fc208d98-4dee-4134-8c7e-de70bdfad5d5)
 * **Features:** Turn-based combat system.
 * **Future Plans:** Implement a back-end framework like Express.js
