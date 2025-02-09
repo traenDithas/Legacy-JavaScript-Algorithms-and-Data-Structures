@@ -1,63 +1,62 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const url = "https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json";
+const url = "https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json";
 
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      const dataset = data.data;
-      const w = 800;
-      const h = 400;
-      const padding = 50;
+      const gdpData = data.data;
 
-      const svg = d3.select("body").append("svg")
-        .attr("width", w)
-        .attr("height", h);
+      const margin = { top: 50, right: 20, bottom: 70, left: 70 };
+      const width = 900 - margin.left - margin.right;
+      const height = 500 - margin.top - margin.bottom;
 
-      svg.append("title").attr("id", "title").text("United States GDP");
+      const svg = d3.select("#chart")
+        .append("g")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
 
-      const xScale = d3.scaleTime()
-        .domain([new Date(dataset[0][0]), new Date(dataset[dataset.length - 1][0])])
-        .range([padding, w - padding]);
+      const x = d3.scaleTime()
+        .domain([new Date(gdpData[0][0]), new Date(gdpData[gdpData.length - 1][0])])
+        .range([0, width]);
 
-      const yScale = d3.scaleLinear()
-        .domain([0, d3.max(dataset, d => d[1])])
-        .range([h - padding, padding]);
+      const y = d3.scaleLinear()
+        .domain([0, d3.max(gdpData, d => d[1])])
+        .range([height, 0]);
 
-      const xAxis = d3.axisBottom(xScale);
-      const yAxis = d3.axisLeft(yScale);
+      svg.append("g")
+        .attr("id", "x-axis")
+        .attr("transform", `translate(0,${height})`)
+        .call(d3.axisBottom(x));
 
-      svg.append("g").attr("id", "x-axis").attr("transform", `translate(0, ${h - padding})`).call(xAxis);
-      svg.append("g").attr("id", "y-axis").attr("transform", `translate(${padding}, 0)`).call(yAxis);
+      svg.append("g")
+        .attr("id", "y-axis")
+        .call(d3.axisLeft(y));
 
       const tooltip = d3.select("body").append("div")
-        .attr("id", "tooltip")
-        .style("opacity", 0)
-        .style("position", "absolute")
-        .style("background-color", "white")
-        .style("border", "1px solid black")
-        .style("padding", "5px");
+        .attr("id", "tooltip");
 
       svg.selectAll(".bar")
-        .data(dataset)
+        .data(gdpData)
         .enter().append("rect")
         .attr("class", "bar")
         .attr("data-date", d => d[0])
         .attr("data-gdp", d => d[1])
-        .attr("x", (d) => xScale(new Date(d[0])))
-        .attr("y", d => yScale(d[1]))
-        .attr("width", (w - 2 * padding) / dataset.length)
-        .attr("height", d => h - padding - yScale(d[1]))
-        .attr("fill", "steelblue")
+        .attr("x", d => x(new Date(d[0])))
+        .attr("width", width / gdpData.length)
+        .attr("y", d => y(d[1]))
+        .attr("height", d => height - y(d[1]))
         .on("mouseover", (event, d) => {
-          tooltip.transition().duration(200).style("opacity", .9);
-          tooltip.html(`Date: ${d[0]}<br>GDP: $${d[1]} Billion`)
+          tooltip.transition()
+            .duration(200)
+            .style("opacity", .9);
+          tooltip.html(`${d[0]}<br>GDP: $${d[1].toLocaleString()}`)
             .style("left", (event.pageX + 10) + "px")
-            .style("top", (event.pageY - 28) + "px")
+            .style("top", (event.pageY - 30) + "px")
             .attr("data-date", d[0]);
         })
+        
         .on("mouseout", () => {
-          tooltip.transition().duration(500).style("opacity", 0);
+          tooltip.transition()
+            .duration(500)
+            .style("opacity", 0);
         });
-    })
-    .catch(error => console.error("Error fetching data:", error));
-});
+
+    });

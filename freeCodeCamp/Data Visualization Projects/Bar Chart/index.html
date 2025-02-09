@@ -1,50 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
-  <title>GDP Bar Chart</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bar Chart</title>
+  </head>
 
-<body>
-  <h1 id="title">United States GDP</h1>
-  <p id="description">Interactive GDP Chart</p> <svg id="chart" width="960" height="500"></svg>
-  <div id="tooltip"></div>
-
-    <form id="survey-form">
-      <label id="name-label" for="name">Name:</label>
-      <input type="text" id="name" placeholder="Enter your name" required>
-
-      <label id="email-label" for="email">Email:</label>
-      <input type="email" id="email" placeholder="Enter your email" required>
-
-      <label id="number-label" for="number">Number:</label>
-      <input type="number" id="number" placeholder="Enter a number" min="1" max="100" required>
-
-      <label for="dropdown">Dropdown:</label>
-      <select id="dropdown">
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-        <option value="option3">Option 3</option>
-      </select>
-
-      <p>Radio Buttons:</p>
-      <label><input type="radio" name="radio-group" value="radio1"> Radio 1</label>
-      <label><input type="radio" name="radio-group" value="radio2"> Radio 2</label>
-
-      <p>Checkboxes:</p>
-      <label><input type="checkbox" value="checkbox1"> Checkbox 1</label>
-      <label><input type="checkbox" value="checkbox2"> Checkbox 2</label>
-
-      <label for="comments">Additional Comments:</label>
-      <textarea id="comments"></textarea>
-
-      <button type="submit" id="submit">Submit</button>
-    </form>
+  <body>
+    <h1 id="title">United States GDP</h1>
+    <svg id="chart"></svg>
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 
 </html>
