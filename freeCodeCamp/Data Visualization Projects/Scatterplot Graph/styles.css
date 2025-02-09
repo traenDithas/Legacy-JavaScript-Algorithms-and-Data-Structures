@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+}
+
+#chart {
+  margin: 20px auto;
+}
+
+.dot {
+  fill: steelblue;
+  opacity: 0.7;
+}
+
+.dot:hover {
+  fill: darkblue;
+  opacity: 1;
+}
+
+#tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 8px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+#legend {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
