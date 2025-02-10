@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+}
+
+#title {
+  text-align: center;
+  font-size: 2em;
+}
+
+#description {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#heatmap {
+  margin: 20px;
+}
+
+#legend {
+  margin: 20px;
+}
+
+.cell {
+  stroke: #eee;
+  stroke-width: 0.2;
+}
+
+#tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
