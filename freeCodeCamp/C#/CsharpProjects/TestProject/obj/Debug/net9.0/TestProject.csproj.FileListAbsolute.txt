@@ -1,0 +1,15 @@
+D:\coden\projects\freeCodeCamp\C#\CsharpProjects\TestProject\bin\Debug\net9.0\TestProject.exe
+D:\coden\projects\freeCodeCamp\C#\CsharpProjects\TestProject\bin\Debug\net9.0\TestProject.deps.json
+D:\coden\projects\freeCodeCamp\C#\CsharpProjects\TestProject\bin\Debug\net9.0\TestProject.runtimeconfig.json
+D:\coden\projects\freeCodeCamp\C#\CsharpProjects\TestProject\bin\Debug\net9.0\TestProject.dll
+D:\coden\projects\freeCodeCamp\C#\CsharpProjects\TestProject\bin\Debug\net9.0\TestProject.pdb
+D:\coden\projects\freeCodeCamp\C#\CsharpProjects\TestProject\obj\Debug\net9.0\TestProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\coden\projects\freeCodeCamp\C#\CsharpProjects\TestProject\obj\Debug\net9.0\TestProject.AssemblyInfoInputs.cache
+D:\coden\projects\freeCodeCamp\C#\CsharpProjects\TestProject\obj\Debug\net9.0\TestProject.AssemblyInfo.cs
+D:\coden\projects\freeCodeCamp\C#\CsharpProjects\TestProject\obj\Debug\net9.0\TestProject.csproj.CoreCompileInputs.cache
+D:\coden\projects\freeCodeCamp\C#\CsharpProjects\TestProject\obj\Debug\net9.0\TestProject.sourcelink.json
+D:\coden\projects\freeCodeCamp\C#\CsharpProjects\TestProject\obj\Debug\net9.0\TestProject.dll
+D:\coden\projects\freeCodeCamp\C#\CsharpProjects\TestProject\obj\Debug\net9.0\refint\TestProject.dll
+D:\coden\projects\freeCodeCamp\C#\CsharpProjects\TestProject\obj\Debug\net9.0\TestProject.pdb
+D:\coden\projects\freeCodeCamp\C#\CsharpProjects\TestProject\obj\Debug\net9.0\TestProject.genruntimeconfig.cache
+D:\coden\projects\freeCodeCamp\C#\CsharpProjects\TestProject\obj\Debug\net9.0\ref\TestProject.dll
